@@ -22,14 +22,14 @@ public class KlientHanterare implements Runnable{
 		while(true){
 			try{
 				int kundNr = streamIn.readInt();
-				String losenord = streamIn.readString();
-				String namn = streamIn.readString();
-				String adress = streamIn.readString();
-				String email = streamIn.readString();
+				String losenord = streamIn.readLine();
+				String namn = streamIn.readLine();
+				String adress = streamIn.readLine();
+				String email = streamIn.readLine();
 				int telefon = streamIn.readInt();
-				String land = streamIn.readString();
-				String medlem = streamIn.readString();
-				String medarbetare = streamIn.readString();
+				String land = streamIn.readLine();
+				String medlem = streamIn.readLine();
+				String medarbetare = streamIn.readLine();
 
 				boolean transOK = Server.dbas.transaktion(kundNr, losenord, namn, adress, email, telefon, land, medlem, medarbetare, k);
 				streamOut.writeBoolean(transOK);
