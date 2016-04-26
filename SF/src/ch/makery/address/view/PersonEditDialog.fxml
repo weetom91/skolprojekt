@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.makery.address.view.PersonEditDialogController">
+   <children>
+      <GridPane layoutX="5.0" layoutY="7.0" prefHeight="313.0" prefWidth="589.0">
+         <children>
+            <Label fx:id="namnColumn" text="Namn" GridPane.rowIndex="1" />
+            <Label text="Adress" GridPane.rowIndex="3" />
+            <Label text="Telefon" GridPane.rowIndex="4" />
+            <Label text="Email" GridPane.rowIndex="5" />
+            <Label text="Land" GridPane.rowIndex="6" />
+            <Label GridPane.rowIndex="7" />
+            <Label text="Medlem" GridPane.rowIndex="7" />
+            <Label text="Medarbetare" GridPane.rowIndex="8" />
+            <Label text="Lösenord" GridPane.rowIndex="2" />
+            <Label fx:id="kundNrColumn" text="Kundnummer" />
+            <TextField fx:id="kundNrField" GridPane.columnIndex="1" />
+            <TextField fx:id="namnField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="losenField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="adressField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="telefonField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="landField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="medlemField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="medarbetareField" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <opaqueInsets>
+            <Insets left="5.0" right="5.0" top="30.0" />
+         </opaqueInsets>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+         </rowConstraints>
+      </GridPane>
+      <Button layoutX="508.0" layoutY="347.0" mnemonicParsing="false" text="Avbryt" />
+      <Button defaultButton="true" layoutX="424.0" layoutY="347.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="21.0" prefWidth="74.0" text="Ok" />
+   </children>
+</AnchorPane>
